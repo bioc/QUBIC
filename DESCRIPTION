@@ -26,9 +26,9 @@ License: CC BY-NC-ND 4.0 + file LICENSE
 Depends: R (>= 3.1), biclust
 Imports: Rcpp (>= 0.11.0), methods, Matrix
 LinkingTo: Rcpp, RcppArmadillo
-Suggests: QUBICdata, qgraph, knitr, rmarkdown
+Suggests: QUBICdata, qgraph, fields, knitr, rmarkdown
 SystemRequirements: C++11, Rtools (>= 3.1)
-Enhances: RColorBrewer, fields
+Enhances: RColorBrewer
 URL: http://github.com/zy26/QUBIC
 BugReports: http://github.com/zy26/QUBIC/issues
 RoxygenNote: 5.0.1
