@@ -26,23 +26,17 @@ BEGIN_RCPP
 END_RCPP
 }
 // qubic_de
-List qubic_de(const IntegerMatrix matrix, const double c, const int o, const double f, const int k, const bool P, const bool S, const bool C, const bool verbose, const LogicalMatrix RowxNumber, const LogicalMatrix NumberxCol);
-RcppExport SEXP QUBIC_qubic_de(SEXP matrixSEXP, SEXP cSEXP, SEXP oSEXP, SEXP fSEXP, SEXP kSEXP, SEXP PSEXP, SEXP SSEXP, SEXP CSEXP, SEXP verboseSEXP, SEXP RowxNumberSEXP, SEXP NumberxColSEXP) {
+List qubic_de(const IntegerMatrix matrix, const double c, const bool verbose, const LogicalMatrix RowxNumber, const LogicalMatrix NumberxCol);
+RcppExport SEXP QUBIC_qubic_de(SEXP matrixSEXP, SEXP cSEXP, SEXP verboseSEXP, SEXP RowxNumberSEXP, SEXP NumberxColSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
     Rcpp::traits::input_parameter< const IntegerMatrix >::type matrix(matrixSEXP);
     Rcpp::traits::input_parameter< const double >::type c(cSEXP);
-    Rcpp::traits::input_parameter< const int >::type o(oSEXP);
-    Rcpp::traits::input_parameter< const double >::type f(fSEXP);
-    Rcpp::traits::input_parameter< const int >::type k(kSEXP);
-    Rcpp::traits::input_parameter< const bool >::type P(PSEXP);
-    Rcpp::traits::input_parameter< const bool >::type S(SSEXP);
-    Rcpp::traits::input_parameter< const bool >::type C(CSEXP);
     Rcpp::traits::input_parameter< const bool >::type verbose(verboseSEXP);
     Rcpp::traits::input_parameter< const LogicalMatrix >::type RowxNumber(RowxNumberSEXP);
     Rcpp::traits::input_parameter< const LogicalMatrix >::type NumberxCol(NumberxColSEXP);
-    __result = Rcpp::wrap(qubic_de(matrix, c, o, f, k, P, S, C, verbose, RowxNumber, NumberxCol));
+    __result = Rcpp::wrap(qubic_de(matrix, c, verbose, RowxNumber, NumberxCol));
     return __result;
 END_RCPP
 }

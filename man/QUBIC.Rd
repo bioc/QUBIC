@@ -83,7 +83,7 @@ Only suggested to use when the input data has a few conditions (e.g. less than \
 
 \item{verbose}{If '\code{TRUE}', prints extra information on progress.}
 
-\item{weight}{Alternative weight matrix provided by user, will append to default weight.}
+\item{weight}{Alternative weight matrix provided by user, will append to default weight. \code{o}, \code{f}, \code{k}, \code{P}, \code{type}, \code{C} will be ignored if using this parameter.}
 
 \item{seedbicluster}{Seed provided by user, normally should be a result of function \code{biclust}.}
 

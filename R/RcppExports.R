@@ -7,8 +7,8 @@
 }
 
 #' @backref src/rcpp_qubic.cpp
-.qubic_de <- function(matrix, c, o, f, k, P, S, C, verbose, RowxNumber, NumberxCol) {
-    .Call('QUBIC_qubic_de', PACKAGE = 'QUBIC', matrix, c, o, f, k, P, S, C, verbose, RowxNumber, NumberxCol)
+.qubic_de <- function(matrix, c, verbose, RowxNumber, NumberxCol) {
+    .Call('QUBIC_qubic_de', PACKAGE = 'QUBIC', matrix, c, verbose, RowxNumber, NumberxCol)
 }
 
 #' @backref src/rcpp_qubic.cpp
