@@ -57,7 +57,7 @@ quheatmap = function(x, bicResult, number = 1, showlabel = FALSE, col = c("#3136
         }
     } else if (length(number) == 2) {
         biclust::heatmapBC(x = x, bicResult = bicResult, number = number, local = TRUE,
-            col = col, ylab = "", xlab = "")
+            col = col)
 
         number1 = number[[1]]
         bicRows1 = which(bicResult@RowxNumber[, number1])
